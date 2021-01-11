@@ -1,17 +1,16 @@
-import './App.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-
-import Routes from './Routes';
-
- 
+import "./App.css";
+import Routes from "./Routes";
 
 function App() {
-    
-    return (  
-       <div>
-       <Routes />
-       </div>
-    )
+  return (
+    <>
+      <Routes />
+      <ToastContainer />
+    </>
+  );
 }
 
 export default App;
